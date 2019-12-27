@@ -89,7 +89,7 @@ export module MSX {
      */
     function checkUnit(msx: MsxData) {
         if (msx.factBonus == 0.0 && msx.pureBonus == 0.0) {
-            units.delete(GetHandleId(msx.u));
+            units.delete(GetHandleId(msx.u));        
         } else {
             units.set(GetHandleId(msx.u), msx);
         }
